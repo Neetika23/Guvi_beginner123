@@ -15,4 +15,6 @@ int main()
             i++;
         }
     }
+    else
+        cout<<"Invalid";
 }
