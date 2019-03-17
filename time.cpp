@@ -10,8 +10,15 @@ int main()
     struct TIME startTime, stopTime, diff;
     scanf("%d %d", &startTime.hours, &startTime.minutes);
     scanf("%d %d", &stopTime.hours, &stopTime.minutes);
+    if(startTime.hours>0 && startTime.minutes>0)
+    {
     differenceBetweenTimePeriod(startTime, stopTime, &diff);
     printf("= %d:%d\n", diff.hours, diff.minutes);
+    }
+    else
+    {
+        printf("Invalid time");
+    }
     return 0;
 }
 void differenceBetweenTimePeriod(struct TIME start, struct TIME stop, struct TIME *diff)
