@@ -17,5 +17,6 @@ int main()
 	else
 	{
 		cout<<"Invalid size";
+	}
     return 0;
 }
