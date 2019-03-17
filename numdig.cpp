@@ -13,7 +13,7 @@ int main()
     string str;
     cin>>str;
     if (isNumber(str)) 
-        cout << "Yes"; 
+        cout << "yes"; 
     else
         cout << "No";
 } 
