@@ -40,12 +40,18 @@ int main()
 { 
     int n,arr[100];
     cin>>n;
+    if(n>0)
+    {
     for(int i=0;i<n;i++)
     {
         cin>>arr[i];
     }
     quickSort(arr, 0, n-1); 
-    
     printArray(arr, n); 
+    }
+    else
+    {
+        cout<<"Invalid size";
+    }
     return 0; 
 } 
